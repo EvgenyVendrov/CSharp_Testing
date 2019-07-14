@@ -8,6 +8,8 @@ namespace interviewQuestion
 {
     class EnteryPoint
     {
+        //basic function which recives a dynamic typed instance (which means the type will be decided in run time)
+        //and prints the functions this instance can use based on its type
         public static void interview1(dynamic input)
         {
             dynamic checker;
