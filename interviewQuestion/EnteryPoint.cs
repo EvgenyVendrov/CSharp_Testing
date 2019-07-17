@@ -19,7 +19,6 @@ namespace interviewQuestion
             {
                 output.Append("c1,c2");
                 Console.WriteLine(output.ToString());
-                Console.ReadKey();
                 return;
             }
             checker = input as B;
@@ -27,7 +26,6 @@ namespace interviewQuestion
             {
                 output.Append("a1,a2,b1,b2");
                 Console.WriteLine(output.ToString());
-                Console.ReadKey();
                 return;
             }
             checker = input as A;
@@ -35,14 +33,12 @@ namespace interviewQuestion
             {
                 output.Append("a1, a2");
                 Console.WriteLine(output.ToString());
-                Console.ReadKey();
                 return;
             }
             if (checker == null)
             {
                 output.Append("none of these types :*");
                 Console.WriteLine(output.ToString());
-                Console.ReadKey();
                 return;
 
             }
@@ -53,6 +49,8 @@ namespace interviewQuestion
         {
             A a=new B();
             interview1(a);
+            Console.ReadKey();
+
         }
     }
 }
